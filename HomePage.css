@@ -1,0 +1,83 @@
+#login_card {
+    width: 350px;
+    margin:auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px royalblue;
+    background-color: white;
+}
+h1 {
+    margin-bottom: 50px;
+    
+    text-align: center;
+    background-color: royalblue;
+    text-shadow: 1px 1px 1px grey,
+                2px 2px 1px grey;
+    color: white;
+}
+body {
+    background-color: lightgrey;
+}
+
+.login {
+    font-size: 26px;
+    /*line-height: 1.5;*/
+    font-weight: 400;
+    height: 20px;
+    padding: 15px 12px 6px;
+    border-radius: 4px;
+    
+}
+
+.home_button {
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-weight: 600;
+    padding: 0 24px;
+    
+    width: 345px;
+    height: 40px;
+    
+    
+}
+
+#password {
+    margin-top: 20px;
+}
+
+#login_button {
+    margin-top: 30px;
+    background-color: royalblue;
+    color: white;
+}
+
+#login_button:hover {
+    background-color: royalblue;
+}
+
+#new_user {
+    text-align: center;
+}
+
+#create_button {
+    background-color: lightgray;
+
+}
+
+#create_button:hover {
+    background-color: darkgray;
+    
+}
+
+#invalid_user {
+    color: white;
+    font-weight: bold;
+}
+.special-word { 
+    color: royalblue; 
+    
+  }
+
+

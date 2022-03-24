@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mento</title>
+        <link href="HomePage.css" rel="stylesheet">
+        <script src="Home.script.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>Connect<span class='special-word'>IN</span></h1>
+            
+
+            <div id="login_card">
+                <form id="login_form" action="/auth/login" method="POST" >
+                    <h2>Sign in</h2>
+                    <input id="username" name="username" class="login" placeholder="Email"> <br>
+                    <label id="invalid_user">Please enter a valid username</label>
+                    <input id="password" name="password" type="password" class="login" placeholder="Password"> <br>
+                    <input type="submit" class="home_button" id="login_button" value="Sign in">
+
+                    <h4 id="new_user">New to Interest Matcher?</h4>
+
+                
+                    
+                    
+                </form>
+                
+                <a href="create.account.html">
+                        <button class="home_button" id="create_button" value="Create Account" >Create Account</button>
+                </a>
+
+            
+        </div>
+    </body>
+</html>
