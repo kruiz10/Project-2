@@ -47,6 +47,12 @@ h2{font-size: 4vh;}
     justify-content: center;
     text-align: center;
 }
+
+img {
+  margin: auto auto;
+  max-height: 25vh;
+  max-width: 75vw;
+}
 #avatar {
     margin: auto auto;
     position: fixed;
@@ -68,7 +74,7 @@ h2{font-size: 4vh;}
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 3vw;
     color: #f1f1f1;
     display: block;
   }
@@ -76,6 +82,10 @@ h2{font-size: 4vh;}
 
   .sidenav a:hover {
     color: #f1f1f1;
+  }
+
+  .footerHeight a {
+    font-size: 2vw;
   }
   a {
     text-decoration: none;
@@ -92,3 +102,53 @@ h2{font-size: 4vh;}
     
     border-radius: 50%;
   }
+
+  #Matches {
+    width: 75vw;
+    margin:auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px lightgrey;
+    background-color: white;
+}
+
+.Scrollbox {
+    width:50vw;
+    height:50vh;
+    line-height:  15px;
+    overflow:scroll;
+    padding:5px;
+    background-color:white;
+    color:black;
+    border:4px double royalblue;
+}
+
+#Users {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+th, td {
+        width: auto;
+        text-align: center;
+        border: 1px solid royalblue;
+        padding: 10px;
+      }
+
+#Users td {
+    text-align: center;
+    margin-top: auto;
+}
+
+#Users tr {
+    margin-top: 20px;
+    margin-bottom: auto;
+    padding: 20px;
+}
+
+#Users td:first-child {
+    text-align: left;
+}
+
