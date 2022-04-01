@@ -10,10 +10,15 @@ h1 {
     margin-bottom: 50px;
     
     text-align: center;
-    background-color: royalblue;
+    background-color: rgb(65, 105, 225);
     text-shadow: 1px 1px 1px grey,
                 2px 2px 1px grey;
     color: white;
+}
+img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100px;
 }
 body {
     background-color: lightgrey;
@@ -76,7 +81,7 @@ body {
     font-weight: bold;
 }
 .special-word { 
-    color: royalblue; 
+    color: white; 
     
   }
 
