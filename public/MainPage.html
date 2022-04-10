@@ -22,9 +22,16 @@
 	<div class="row">
 		<div class="col-02 blue mainHeight">
 			<div class="sidenav">
-                <a href="MainPage.html">Home</a></li>
-                <a href="Profile.html">Profile</a></li>
-                <a href="Setting.html">Setting</a></li>
+               
+				<button href="/MainPage.html">Home</button>
+
+                <form>
+					<button href="Profile.html">Profile</button>
+				</form>
+
+                <form action="/auth/settings" method="POST">
+					<button type="submit">Settings</button>
+				</form>
             </div>
 		</div>
 		<div class="col-10 whitesmoke mainHeight">
@@ -80,7 +87,10 @@
 <footer>
 	<div class="row">
 		<div class="col-14 blue footerHeight">
-			<a href="#" class="previous round">&#8249;Logout</a>
+			<form  action="/auth/logout" method="POST" >
+				<button class="previous round" type="submit">&#8249;Logout</button>
+			</form>
+			<!--<a href="#" class="previous round">&#8249;Logout</a>-->
 		</div>
 </footer>
 </html>

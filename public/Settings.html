@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectIn Home Page</title>
+    <link href="/Settings.css" rel="Stylesheet">
+    <script src="jscript.js"></script>
+</head>
+<body>
+    <div class="row">
+		<div class="col-12 white headHeight imageDiv">
+			<h1><img src="/IMG_4417.jpeg" alt="ConnectIn Logo" class="center"></h1>
+		</div>	
+		<div class="col-13 blue headHeight imageDiv">
+			<img id="avatar" src="/Avatar.jpeg" alt="Profile Picture" class="center">
+		</div>	
+	</div>
+
+	
+	<div class="row">
+		<div class="col-02 blue mainHeight">
+			<div class="sidenav">
+               
+				<button href="/MainPage.html">Home</button>
+
+                <form>
+					<button href="Profile.html">Profile</button>
+				</form>
+
+                <form>
+					<button href="Setting.html">Settings</button>
+				</form>
+            </div>
+		</div>
+		<div class="col-10 whitesmoke mainHeight">
+			<div id="Matches" class="Scrollbox">
+				<h3>Update Settings</h3>
+                <form id="credentials_form" action="/auth/update" method="POST">
+                    
+                
+                    <input id="FirstName" name="FirstName" class="credentials" placeholder="First Name" value="Jacob"><br><br>
+                   
+                    <input id="LastName" name="LastName" class="credentials" placeholder="Last Name" value="Biciolis"><br><br>
+                    
+                    <input id="Email" name="Email" class="credentials" placeholder="Email" value="biciolisj@gmail.com"><br><br>
+                
+                    <input id="PhoneNumber" name="PhoneNumber" class="credentials" placeholder="Phone Number" value="6232370221"> <br> <br>
+                    
+                    
+                        <select id="Interest1" name="Interest1">
+                            <option value="Choose">Select Mentor Option 1</option>
+                            <option value="Active">Active</option>
+                            <option value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato"></option><option selected="" value="Couch Potato">Couch Potato</option>
+                            <option value="Career Oriented">Career Oriented</option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <select id="Interest2" name="Interest2">
+                            <option value="Choose">Select Mentor Option 2</option>
+                            <option value="VR">VR</option>
+                            <option value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"></option><option selected="" value="Apple"><option selected="" value="Apple">Apple</option></option>
+                            <option value="Microsoft">Microsoft</option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <select id="Interest3" name="Interest3">
+                            <option value="Choose">Select Mentor Option 3</option>
+                            <option value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"></option><option selected="" value="Basketball"><option selected="" value="Basketball">Basketball</option></option>
+                            <option value="Football">Football</option>
+                            <option value="Soccer">Soccer</option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <select id="Interest4" name="Interest4">
+                            <option value="Choose">Select Mentor Option 4</option>
+                            <option value="Hip Hop">Hip Hop</option>
+                            <option value="Rock">Rock</option>
+                            <option value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"></option><option selected="" value="EDM"><option selected="" value="EDM">EDM</option></option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <select id="Interest5" name="Interest5">
+                            <option value="Choose">Select Mentor Option 5</option>
+                            <option value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television"></option><option selected="" value="Television">Television</option>
+                            <option value="Social Media"></option><option selected="" value="Social Media"></option><option selected="" value="Social Media"><option selected="" value="Social Media">Social Media</option></option>
+                            <option value="Video Games">Video Games</option>
+                            <option value="">None</option>
+                        </select> <br><br>
+
+                        <input checked="" id="Mentor" type="radio" name="Mentor" value="1">
+                        <label>Mentor</label>
+                        <input checked="" id="Mentee" type="radio" name="Mentor" value="0">
+                        <label>Mentee</label>
+                        <br> <br>
+                    
+                    <button type="submit" id="update_button">Update</button> <br><br>
+                    
+                </form>
+			
+		
+			</div>
+		</div>
+	</div>
+	
+
+<footer>
+	<div class="row">
+		<div class="col-14 blue footerHeight">
+			<form action="/auth/logout" method="POST">
+				<button class="previous round" type="submit">‹Logout</button>
+			</form>
+			<!--<a href="#" class="previous round">&#8249;Logout</a>-->
+		</div>
+</div></footer>
+
+
+    
+
+</body></html>

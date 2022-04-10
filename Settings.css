@@ -155,4 +155,7 @@ th, td {
 #Users td:first-child {
     text-align: left;
 }
-
+#update_button {
+    color: white;
+    background-color: royalblue;
+}
