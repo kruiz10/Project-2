@@ -64,26 +64,26 @@ exports.settings = async (req, res) => {
     $("#Interest1").find("option").each((i, op) => {
         if ($(op).html() === logged_in.Interest1) {
         
-            $(op).html($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
-            //$(op).replaceWith($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
+            //console.log($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
+            $(op).replaceWith($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
         }
     })
 
     $("#Interest2").find("option").each((i, op) => {
         if ($(op).html() === logged_in.Interest2) {
-            $(op).html($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')   
+            $(op).replaceWith($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
         }  
     })
     
     $("#Interest3").find("option").each((i, op) => {
         if ($(op).html() === logged_in.Interest3) {
-            $(op).html($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')   
+            $(op).replaceWith($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
         } 
     })
     
     $("#Interest4").find("option").each((i, op) => {
         if ($(op).html() === logged_in.Interest4) {
-            $(op).html($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>') 
+            $(op).replaceWith($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
         }
         
     })
@@ -91,9 +91,9 @@ exports.settings = async (req, res) => {
     $("#Interest5").find("option").each((i, op) => {
         
         if ($(op).html() === logged_in.Interest5) {
-            $(op).html($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
+            $(op).replaceWith($.html(op).slice(0, 8) + 'selected ' + $.html(op).slice(8, -1) + '>')
         }     
-    })
+    }) 
     
    if (logged_in.Mentor === 0) {
     
@@ -112,7 +112,7 @@ exports.settings = async (req, res) => {
             console.log(err)
         }
         else {
-            console.log('res.writefile worked')
+           
             fs.readFile(publicDirectory + '/public/Settings.html', 'utf-8', (err, data) => {
                 if (err) {
                     console.log(err)
@@ -127,7 +127,7 @@ exports.settings = async (req, res) => {
 }
 
 exports.update = async (req, res) => {
-    console.log('update worked')
+ 
     let {
         FirstName,
         LastName,
@@ -183,7 +183,7 @@ exports.logout = (req, res) => {
             console.log(err)
         }
         else {
-            console.log('res.writefile worked')
+           
             fs.readFile(publicDirectory + '/public/HomePage.html', 'utf-8', (err, data) => {
                 if (err) {
                     console.log(err)
