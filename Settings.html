@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConnectIn Home Page</title>
     <link href="Settings.css" rel="Stylesheet">
-    <script src="jscript.js"></script>
+    
 </head>
 <body>
     <div class="row">
@@ -14,7 +14,7 @@
 			<h1><img src="/IMG_4417.jpeg" alt="ConnectIn Logo" class="center"></h1>
 		</div>	
 		<div class="col-13 blue headHeight imageDiv">
-			<img id="avatar" src="/Avatar.jpeg" alt="Profile Picture" class="center">
+			<div id="display_image"></div>
 		</div>	
 	</div>
 
@@ -94,6 +94,24 @@
                         <input type="radio" name="Mentor" value="0">
                         <label>Mentee</label>
                         <br> <br>
+
+                        <input type="file" id="image_input" accept="image/png, image/jpeg">
+
+                        <div id="display_image"></div>
+                        <script>
+                            const image_input = document.querySelector("#image_input");
+                            var uploaded_image;
+                        
+                            image_input.addEventListener('change', function(){
+                            const reader = new FileReader();
+                            reader.addEventListener('load', () => {
+                                uploaded_image = reader.result;
+                                document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
+                            });
+                            reader.readAsDataURL(this.files[0]);
+                            });
+                        
+                        </script>
                     
                     <button type="submit" id="update_button">Update</button> </button><br><br>
                     

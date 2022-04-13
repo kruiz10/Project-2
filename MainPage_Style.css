@@ -157,3 +157,11 @@ th, td {
   text-align: right;
 }
 
+#display_image{
+ 
+  position: relative; 
+  width: 200px; 
+  height: 200px;  
+  border-radius: 50%;
+  background-size: cover;
+}

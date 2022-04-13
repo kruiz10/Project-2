@@ -159,3 +159,11 @@ th, td {
     color: white;
     background-color: royalblue;
 }
+#display_image{
+  margin: auto auto;
+  position: relative; 
+  width: 200px; 
+  height: 200px;  
+  border-radius: 50%;
+  background-size: cover;
+}
