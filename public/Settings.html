@@ -13,7 +13,10 @@
 		</div>	
 		<div class="col-13 blue headHeight imageDiv">
 			<img id="avatar" src="/blank-profile-picture-973460__480.jpeg" alt="Profile Picture" class="center">
-		</div>	
+            
+		</div>
+
+
 	</div>
 
 	
@@ -88,6 +91,23 @@
                         <br> <br>
 
                         <input type="file" id="image_input" accept="image/png, image/jpeg">
+
+                        <div id="display_image"></div>
+                        <script>
+                            const image_input = document.querySelector("#image_input");
+                            var uploaded_image;
+                        
+                            image_input.addEventListener('change', function(){
+                            const reader = new FileReader();
+                            reader.addEventListener('load', () => {
+                                uploaded_image = reader.result;
+                                document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
+                            });
+                            console.log(this.files[0].name) // .jpeg file name
+                            reader.readAsDataURL(this.files[0]);
+                            });
+                        
+                        </script>
 
                     
                     <button type="submit" id="update_button">Update</button> <br><br>
