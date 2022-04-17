@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="/Profile_Style.css" rel="Stylesheet">
+</head>
+<body>
+    <div class="row">
+		<div class="col-12 white headHeight imageDiv">
+			<h1><img src="/IMG_4417.jpeg" alt="ConnectIn Logo" class="center"></h1>
+		</div>	
+		<div class="col-13 blue headHeight imageDiv">
+			<img id="avatar" src="/blank-profile-picture-973460__480.jpeg" alt="Profile Picture" class="center">
+		</div>	
+	</div>
+
+	
+	<div class="row">
+		<div class="col-02 blue mainHeight">
+			<div class="sidenav">
+				<form action="/auth/main" method="POST">
+					<button type="submit">Main</button>
+				</form>
+
+                <form action="/auth/profile" method="POST">
+					<button type="submit">Profile</button>
+				</form>
+
+                <form action="/auth/settings" method="POST">
+					<button type="submit">Settings</button>
+            	</form>
+			</div>
+		</div>
+		<div class="col-10 whitesmoke mainHeight">
+			<div id="ProfileInfo" class="Scrollbox">
+				<h2 id="name">Jacob Biciolis</h2>
+                <br>
+				<table id="UserInterests">
+
+					<tbody><tr>
+						<th>Email:</th>
+						<td id="Email">biciolisj@gmail.com</td>
+						
+					</tr>
+		
+					<tr>
+						<th>Phone Number:</th>
+						<td id="PhoneNumber">6232370221</td>
+						
+					</tr>
+		
+					<tr>
+						<th>Career:</th>
+						<td id="Interest1">Medicine</td>
+						
+					</tr>
+		
+					<tr>
+						<th>Hobby:</th>
+						<td id="Interest2">Dancing</td>
+						
+					</tr>
+		
+					<tr>
+						<th>Specific Skills:</th>
+						<td id="Interest3">Python</td>
+						
+					</tr>
+		
+		
+					
+				</tbody></table>
+
+                <br>
+                <h4>*To edit profile information, go to Settings tab.</h4>
+		
+			</div>
+		</div>
+	</div>
+	
+
+<footer>
+	<div class="row">
+		<div class="col-14 blue footerHeight">
+			<form action="/auth/logout" method="POST">
+				<button class="previous round" type="submit">‹Logout</button>
+			</form>
+		</div>
+	
+</div></footer>
+
+</body></html>

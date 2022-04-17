@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +12,7 @@
 			<h1><img src="/IMG_4417.jpeg" alt="ConnectIn Logo" class="center"></h1>
 		</div>	
 		<div class="col-13 blue headHeight imageDiv">
-			<img id="avatar" src="/Avatar.jpeg" alt="Profile Picture" class="center">
+			<img id="avatar" src="/blank-profile-picture-973460__480.jpeg" alt="Profile Picture" class="center">
 		</div>	
 	</div>
 
@@ -23,10 +21,12 @@
 		<div class="col-02 blue mainHeight">
 			<div class="sidenav">
                
-				<button href="/MainPage.html">Home</button>
+				<form action="/auth/main" method="POST">
+					<button type="submit">Main</button>
+				</form>
 
-                <form>
-					<button href="Profile.html">Profile</button>
+                <form action="/auth/profile" method="POST">
+					<button type="submit">Profile</button>
 				</form>
 
                 <form action="/auth/settings" method="POST">
@@ -37,64 +37,153 @@
 		<div class="col-10 whitesmoke mainHeight">
 			<div id="Matches" class="Scrollbox">
 				<h3>You matched subjects with...</h3>
-				<table id="Users">
-		
-					
-					<tr>
-						<th>Name</th>
-						<th>Similar Interests</th>
-						<th>Contact Info</th>
-					</tr>
-		
-					<tr>
-						<td>Elon Musk</td>
-						<td>Sports</td>
-						<td>Connect</td>
-					</tr>
-		
-					<tr>
-						<td>Jeff Bezos</td>
-						<td>Technology</td>
-						<td>Connect</td>
-					</tr>
-		
-					<tr>
-						<td>LeBron James</td>
-						<td>Sports</td>
-						<td>Connect</td>
-					</tr>
-		
-					<tr>
-						<td>Cristiano Ronaldo</td>
-						<td>Sports</td>
-						<td>Connect</td>
-					</tr>
-		
-					<tr>
-						<td>Drake</td>
-						<td>Music</td>
-						<td>Connect</td>
-					</tr>
-					
-		
-				</table>
+				         
+            
+            
+                        
+            
+            
+                        
+                        
+            
+            
+                        <table id="Users">
+                            <tbody><tr><th>Name</th>
+                            <th>Mentorship Interests</th>
+                            <th>Contact Info</th>
+                        </tr></tbody>
+                            <tr>
+                                <th>fred little</th>
+                                <th>Finance,  Skiing,  Excel</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:fred.little@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>tom sanders</th>
+                                <th>Software Development,  Surfing,  Python</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:tom.sanders@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>Georg Hegel</th>
+                                <th>Finance,  Skiing,  Excel</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:hegel@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>Martin Heidegger</th>
+                                <th>Software Development,  Skiing,  UIPath</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:m.heidegger@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>sylvester bernstein</th>
+                                <th>IT,  Surfing,  UIPath</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:s.bernstein@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>Bob ronson</th>
+                                <th>Engineering,  Surfing,  SQL</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:bobronson@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>Jane doe</th>
+                                <th>Finance,  Surfing,  SQL</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:janedoe@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            
+                            <tr>
+                                <th>Bob Smith</th>
+                                <th>Finance,  Reading,  Excel</th>
+                                <th>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Connect</button>
+                                        <div class="dropdown-contactInfo">
+                                            <a href="tel:1234567891">Call</a>
+                                            <a href="mailto:bob@gmail.com">Email</a>             
+                                        </div>
+                                </div></th>
+                            </tr>
+                            </table>
+                        
+            
+            
+                        
+                        
+            
+            
+                        
+            
+                  
+                        
 		
 			</div>
 		</div>
 	</div>
 	
-</body>
+
 <footer>
 	<div class="row">
 		<div class="col-14 blue footerHeight">
-			<form  action="/auth/logout" method="POST" >
-				<button class="previous round" type="submit">&#8249;Logout</button>
+			<form action="/auth/logout" method="POST">
+				<button class="previous round" type="submit">‹Logout</button>
 			</form>
 			<!--<a href="#" class="previous round">&#8249;Logout</a>-->
 		</div>
-</footer>
-</html>
+</div></footer>
 
-    </div>
-</body>
-</html>
+
+    
+
+</body></html>

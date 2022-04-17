@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ConnectIn</title>
+        <link href="Register.css" rel="stylesheet">
+        <script src="Home.script.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="wrapper">
+            <h1><img src="IMG_4417.jpeg" alt="Logo" class="center"></h1>
+            
+            <div id="create_account" align="center">
+                <form id="credentials_form" action="/auth/register" method="POST">
+                    
+                    <h2>Please Enter Credentials</h2>
+                    <input id="FirstName" name="FirstName" class="credentials" placeholder="First Name"><br><br>
+                   
+                    <input id="LastName" name="LastName" class="credentials" placeholder="Last Name"><br><br>
+                    
+                    <input id="password" name="password" type="password" class="credentials" placeholder="Password"><br><br>
+                    
+                    <input id="verifypassword" name="Verifypassword" type="password" class="credentials" placeholder="Verify Password"><br><br>
+                    
+                    <input id="Email" name="Email" class="credentials" placeholder="Email"><br><br>
+                
+                    <input id="PhoneNumber" name="PhoneNumber" class="credentials" placeholder="Phone Number"> <br> <br>
+                    
+                    
+                        <select name="Interest1" >
+                            <option value="Choose">Career Options</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="IT">IT</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <select name="Interest2" >
+                            <option value="Choose">Hobby Options</option>
+                            <option value="Surfing">Surfing</option>
+                            <option value="Skiing">Skiing</option>
+                            <option value="Fitness">Fitness</option>
+                            <option value="Reading">Reading</option>
+                            <option value="Dancing">Dancing</option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <select name="Interest3" >
+                            <option value="Choose">Specific Skill Options</option>
+                            <option value="Python">Python</option>
+                            <option value="Excel">Excel</option>
+                            <option value="SQL">SQL</option>
+                            <option value="UIPath">UIPath</option>
+                            <option value="Tableau">Tableau</option>
+                            <option value="">None</option>
+                        </select><br><br>
+
+                        <input id="Mentor" type="radio" name="Mentor" value="1">
+                        <label>Mentor</label>
+                        <input id="Mentee" type="radio" name="Mentor" value="0">
+                        <label>Mentee</label>
+                        <br> <br>
+                    
+                    <button type="submit" class="home_button" id="CreateAccount_button">Create Account</button> </button><br><br>
+                    
+                </form>
+                <a href="HomePage.html">
+                        <button class="home_button" id="create_button" value="Back" >Back</button>
+                    </a>
+            </div>
+
+            
+    </body>
+</html>

@@ -37,4 +37,13 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/HomePage.html")
 })
 
+app.get("/Register.html", (req, res) => {
+    res.sendFile(__dirname + "/public/Register.html")
+})
+app.get("/auth/Register.html", (req, res) => {
+    res.sendFile(__dirname + "/public/Register.html")
+})
+
+
+
 app.use('/auth', require('./routes/auth'))

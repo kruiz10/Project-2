@@ -1,0 +1,172 @@
+#create_account {
+    width: 350px;
+    margin:auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px royalblue;
+    background-color: white;
+}
+h1 {
+    margin-bottom: 50px;
+    
+    text-align: center;
+    background-color: rgb(65, 105, 225);
+    text-shadow: 1px 1px 1px grey,
+                2px 2px 1px grey;
+    color: white;
+}
+img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100px;
+}
+body {
+    background-color: lightgrey;
+}
+
+.login {
+    font-size: 26px;
+    /*line-height: 1.5;*/
+    font-weight: 400;
+    height: 20px;
+    padding: 15px 12px 6px;
+    border-radius: 4px;
+    
+}
+
+.home_button {
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-weight: 600;
+    padding: 0 24px;
+    
+    width: 345px;
+    height: 40px;
+    
+    
+}
+
+#password {
+    margin-top: 20px;
+}
+
+#login_button {
+    margin-top: 30px;
+    background-color: royalblue;
+    color: white;
+}
+
+#login_button:hover {
+    background-color: royalblue;
+}
+
+#new_user {
+    text-align: center;
+}
+
+#create_button {
+    background-color: lightgray;
+
+}
+
+#create_button:hover {
+    background-color: darkgray;
+    
+}
+
+#invalid_user {
+    color: white;
+    font-weight: bold;
+}
+.special-word { 
+    color: white; 
+    
+  }
+
+h1 {
+    margin-bottom: 50px;
+    border-radius: 28px;
+    text-align: center;
+    text-shadow: 1px 1px 1px grey,
+                2px 2px 1px grey;
+}
+h2{
+    text-align: center;
+}
+
+.credentials_form {
+  text-align: center;
+    
+}
+.credentials {
+    font-size: 26px;
+    /*line-height: 1.5;*/
+    font-weight: 400;
+    height: 20px;
+    padding: 15px 12px 6px;
+    border-radius: 4px;
+    
+    
+}
+
+
+.home_button {
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+    
+    font-weight: 600;
+    padding: 0 24px;
+    border-radius: 28px;
+    width: 345px;
+    height: 40px;
+    
+    
+}
+
+
+
+#CreateAccount_button {
+    margin-top: 30px;
+    background-color: royalblue;
+    color: white;
+}
+
+#login_button:hover {
+    background-color: darkcyan;
+}
+
+#new_user {
+    text-align: center;
+}
+
+#create_button {
+    background-color: lightgray;
+
+}
+
+#create_button:hover {
+    background-color: darkgray;
+    
+}
+
+#invalid_user {
+    color: white;
+    font-weight: bold;
+}
+
+select{
+    width: 300px;
+    height: 50px; 
+    font-size: 20px;
+    /*line-height: 1.5;*/
+    font-weight: 400;
+    padding: 15px 12px 6px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px lightgrey;
+    background-color: white;
+}
+
+

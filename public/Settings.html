@@ -12,7 +12,7 @@
 			<h1><img src="/IMG_4417.jpeg" alt="ConnectIn Logo" class="center"></h1>
 		</div>	
 		<div class="col-13 blue headHeight imageDiv">
-			<img id="avatar" src="/Avatar.jpeg" alt="Profile Picture" class="center">
+			<img id="avatar" src="/blank-profile-picture-973460__480.jpeg" alt="Profile Picture" class="center">
 		</div>	
 	</div>
 
@@ -21,15 +21,17 @@
 		<div class="col-02 blue mainHeight">
 			<div class="sidenav">
                
-				<button href="/MainPage.html">Home</button>
-
-                <form>
-					<button href="Profile.html">Profile</button>
+				<form action="/auth/Main" method="POST">
+					<button type="submit">Main</button>
 				</form>
 
-                <form>
-					<button href="Setting.html">Settings</button>
+                <form action="/auth/profile" method="POST">
+					<button type="submit">Profile</button>
 				</form>
+
+                <form action="/auth/settings" method="POST">
+					<button type="submit">Settings</button>
+            	</form>
             </div>
 		</div>
 		<div class="col-10 whitesmoke mainHeight">
@@ -47,54 +49,46 @@
                     <input id="PhoneNumber" name="PhoneNumber" class="credentials" placeholder="Phone Number" value="6232370221"> <br> <br>
 
                     <select id="Interest1" name="Interest1">
-                        <option value="Choose">Select Mentor Option 1</option>
-                        <option value="Active">Active</option>
-                        <option selected="" value="Couch Potato">Couch Potato</option>
-                        <option value="Career Oriented">Career Oriented</option>
+                        <option selected="" value="Choose">Career Options</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="IT">IT</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Engineering">Engineering</option>
                         <option value="">None</option>
                     </select><br><br>
 
                     <select id="Interest2" name="Interest2">
-                        <option value="Choose">Select Mentor Option 2</option>
-                        <option value="VR">VR</option>
-                        <option selected="" value="Apple">Apple</option>
-                        <option value="Microsoft">Microsoft</option>
+                        <option selected="" value="Choose">Hobby Options</option>
+                        <option value="Surfing">Surfing</option>
+                        <option value="Skiing">Skiing</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Dancing">Dancing</option>
                         <option value="">None</option>
                     </select><br><br>
 
                     <select id="Interest3" name="Interest3">
-                        <option value="Choose">Select Mentor Option 3</option>
-                        <option selected="" value="Basketball">Basketball</option>
-                        <option value="Football">Football</option>
-                        <option value="Soccer">Soccer</option>
+                        <option selected="" value="Choose">Specific Skill Options</option>
+                        <option value="Python">Python</option>
+                        <option value="Excel">Excel</option>
+                        <option value="SQL">SQL</option>
+                        <option value="UIPath">UIPath</option>
+                        <option value="Tableau">Tableau</option>
                         <option value="">None</option>
                     </select><br><br>
-
-                    <select id="Interest4" name="Interest4">
-                        <option value="Choose">Select Mentor Option 4</option>
-                        <option value="Hip Hop">Hip Hop</option>
-                        <option value="Rock">Rock</option>
-                        <option selected="" value="EDM">EDM</option>
-                        <option value="">None</option>
-                    </select><br><br>
-
-                    <select id="Interest5" name="Interest5">
-                        <option value="Choose">Select Mentor Option 5</option>
-                        <option value="Television">Television</option>
-                        <option selected="" value="Social Media">Social Media</option>
-                        <option value="Video Games">Video Games</option>
-                        <option value="">None</option>
-                    </select> <br><br>
-
                     
                     
                         
 
                         <input checked="" id="Mentor" type="radio" name="Mentor" value="1">
                         <label>Mentor</label>
-                        <input checked="" id="Mentee" type="radio" name="Mentor" value="0">
+                        <input id="Mentee" type="radio" name="Mentor" value="0">
                         <label>Mentee</label>
                         <br> <br>
+
+                        <input type="file" id="image_input" accept="image/png, image/jpeg">
+
                     
                     <button type="submit" id="update_button">Update</button> <br><br>
                     

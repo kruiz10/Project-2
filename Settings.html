@@ -108,6 +108,7 @@
                                 uploaded_image = reader.result;
                                 document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
                             });
+                            console.log(this.files[0].name) // .jpeg file name
                             reader.readAsDataURL(this.files[0]);
                             });
                         
@@ -129,11 +130,11 @@
 			<form  action="/auth/logout" method="POST" >
 				<button class="previous round" type="submit">&#8249;Logout</button>
 			</form>
+
 			<!--<a href="#" class="previous round">&#8249;Logout</a>-->
 		</div>
+    </div>
 </footer>
 </html>
 
-    </div>
-</body>
-</html>
+    
